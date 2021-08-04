@@ -1,0 +1,33 @@
+.buttonBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.buttonBlock .customButton {
+  width: 100%;
+  color: #000;
+  border: 2px solid #000;
+  background-color: #86d3f4;
+  padding: 16px 19px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.buttonBlock .customButton:hover:enabled {
+  cursor: pointer;
+  color: #fff;
+  background-color: #000;
+}
+
+.buttonBlock .customButton:disabled {
+  color: #4e4e4e;
+  border: 2px solid #4e4e4e;
+}
+/*# sourceMappingURL=style.css.map */
