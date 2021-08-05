@@ -8,6 +8,7 @@ import './styles/styles.css';
 
 function PhoneBlock() {
   const [phoneNumber, setPhoneNumber] = useState('');
+  const [checked, setChecked] = useState(false);
 
   const handleFrameBtnClick = (num: string) => {
     if (num === 'X') {
@@ -38,9 +39,12 @@ function PhoneBlock() {
       </div>
       <PhoneFrame onPhoneFrameBtnClick={(num) => handleFrameBtnClick(num)} />
       <div style={{ marginBottom: '19px' }}>
-        <Checkbox />
+        <Checkbox
+          isChecked={checked}
+          onCheckboxClick={(checked) => setChecked(checked)}
+        />
       </div>
-      <CustomButton text={'Подтвердить номер'} />
+      <CustomButton text={'Подтвердить номер'} isDisabled={!checked} />
     </div>
   );
 }
