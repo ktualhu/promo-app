@@ -1,26 +1,52 @@
 import './styles/styles.css';
 
-function PhoneFrame() {
+interface IProps {
+  onPhoneFrameBtnClick: (num: string) => void;
+}
+
+function PhoneFrame(props: IProps) {
+  const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+  const renderNumberRow = (startInd: number) => {
+    return (
+      <div className="frameRow">
+        {numbers.slice(startInd, startInd + 3).map((val) => {
+          return renderNumberCell(val);
+        })}
+      </div>
+    );
+  };
+
+  const renderNumberCell = (num: number) => {
+    const numStr = num.toString();
+    return (
+      <button
+        className="frameRow__btn"
+        onClick={() => props.onPhoneFrameBtnClick(numStr)}
+      >
+        {numStr}
+      </button>
+    );
+  };
+
   return (
     <div className="frame">
+      {numbers.map((_, i) => {
+        return i % 3 === 0 ? renderNumberRow(i) : null;
+      })}
       <div className="frameRow">
-        <button className="frameRow__btn">1</button>
-        <button className="frameRow__btn">2</button>
-        <button className="frameRow__btn">3</button>
-      </div>
-      <div className="frameRow">
-        <button className="frameRow__btn">4</button>
-        <button className="frameRow__btn">5</button>
-        <button className="frameRow__btn">6</button>
-      </div>
-      <div className="frameRow">
-        <button className="frameRow__btn">7</button>
-        <button className="frameRow__btn">8</button>
-        <button className="frameRow__btn">9</button>
-      </div>
-      <div className="frameRow">
-        <button className="frameRow__btn long">СТЕРЕТЬ</button>
-        <button className="frameRow__btn">0</button>
+        <button
+          className="frameRow__btn long"
+          onClick={() => props.onPhoneFrameBtnClick('X')}
+        >
+          СТЕРЕТЬ
+        </button>
+        <button
+          className="frameRow__btn"
+          onClick={() => props.onPhoneFrameBtnClick('0')}
+        >
+          0
+        </button>
       </div>
     </div>
   );
