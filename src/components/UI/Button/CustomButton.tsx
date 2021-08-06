@@ -2,8 +2,8 @@ import './styles/style.scss';
 
 interface IProps {
   text: string;
-  isDisabled: boolean;
   onButtonClick: () => void;
+  isDisabled?: boolean;
 }
 
 function CustomButton(props: IProps) {
