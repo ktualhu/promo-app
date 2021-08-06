@@ -67,8 +67,8 @@
 }
 
 .long {
-  -webkit-box-flex: 4 !important;
-      -ms-flex-positive: 4 !important;
-          flex-grow: 4 !important;
+  -webkit-box-flex: 3.7 !important;
+      -ms-flex-positive: 3.7 !important;
+          flex-grow: 3.7 !important;
 }
 /*# sourceMappingURL=styles.css.map */

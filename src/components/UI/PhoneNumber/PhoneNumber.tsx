@@ -12,6 +12,7 @@ function PhoneNumber(props: IProps) {
   const [number, setNumber] = useState('+7(___)___-__-__');
   const previousVal = usePreviousValue(value);
 
+  /** Hook for checking previous phone number value to compare with current */
   function usePreviousValue(value: string) {
     const ref = useRef<string>('');
     useEffect(() => {

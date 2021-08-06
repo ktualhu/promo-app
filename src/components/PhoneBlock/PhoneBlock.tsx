@@ -1,5 +1,8 @@
 import axios from 'axios';
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { changeSideBlockState } from '../../app/appSlice';
+import { ESideBlockState } from '../../utils/types/sideBlockState';
 import PhoneFrame from '../PhoneFrame/PhoneFrame';
 import CustomButton from '../UI/Button/CustomButton';
 import Checkbox from '../UI/Checkbox/Checkbox';
@@ -19,6 +22,7 @@ function PhoneBlock() {
     valid: true,
     msg: '',
   });
+  const dispatch = useDispatch();
 
   const handleFrameBtnClick = (num: string) => {
     setPhoneNumberValid({ valid: true, msg: '' });
@@ -46,6 +50,7 @@ function PhoneBlock() {
         },
       });
       if (!res.data.valid) throw new Error('НЕВЕРНО ВВЕДЁН НОМЕР');
+      dispatch(changeSideBlockState(ESideBlockState.SUCCESS));
     } catch (e) {
       setPhoneNumberValid({ valid: false, msg: e.message });
     }
