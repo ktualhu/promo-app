@@ -12,6 +12,22 @@
   box-sizing: border-box;
   padding: 72px 48px;
 
+  .phoneBlock_panels {
+    margin-bottom: 13px;
+
+    .errorMessage {
+      height: 44px;
+      display: flex;
+      align-items: center;
+
+      span {
+        color: #ea0000;
+        font-weight: 500;
+        font-size: 16px;
+      }
+    }
+  }
+
   .simpleText {
     display: flex;
     align-items: center;

@@ -20,6 +20,26 @@
   padding: 72px 48px;
 }
 
+.phoneBlock .phoneBlock_panels {
+  margin-bottom: 13px;
+}
+
+.phoneBlock .phoneBlock_panels .errorMessage {
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.phoneBlock .phoneBlock_panels .errorMessage span {
+  color: #ea0000;
+  font-weight: 500;
+  font-size: 16px;
+}
+
 .phoneBlock .simpleText {
   display: -webkit-box;
   display: -ms-flexbox;

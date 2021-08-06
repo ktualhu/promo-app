@@ -4,10 +4,11 @@ import './styles/styles.css';
 
 interface IProps {
   value: string;
+  isValid: boolean;
 }
 
 function PhoneNumber(props: IProps) {
-  const { value } = props;
+  const { value, isValid } = props;
   const [number, setNumber] = useState('+7(___)___-__-__');
   const previousVal = usePreviousValue(value);
 
@@ -35,7 +36,11 @@ function PhoneNumber(props: IProps) {
     }
   }, [value]);
 
-  return <span className="phoneNumber">{number}</span>;
+  return (
+    <span className={`phoneNumber ${!isValid ? 'notValid' : ''}`}>
+      {number}
+    </span>
+  );
 }
 
 export default PhoneNumber;

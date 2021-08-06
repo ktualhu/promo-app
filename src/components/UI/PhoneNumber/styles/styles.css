@@ -2,4 +2,8 @@
   font-size: 32px;
   font-weight: bold;
 }
+
+.notValid {
+  color: #ea0000;
+}
 /*# sourceMappingURL=styles.css.map */

@@ -9,7 +9,7 @@ function PhoneFrame(props: IProps) {
 
   const renderNumberRow = (startInd: number) => {
     return (
-      <div className="frameRow">
+      <div className="frameRow" key={startInd}>
         {numbers.slice(startInd, startInd + 3).map((val) => {
           return renderNumberCell(val);
         })}
@@ -23,6 +23,7 @@ function PhoneFrame(props: IProps) {
       <button
         className="frameRow__btn"
         onClick={() => props.onPhoneFrameBtnClick(numStr)}
+        key={numStr}
       >
         {numStr}
       </button>
