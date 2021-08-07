@@ -34,6 +34,12 @@
       }
     }
 
+    .frameRow__btn__keyPress {
+      transition: 0.1s;
+      background-color: #000;
+      color: #fff;
+    }
+
     .frameRow__btn:last-child {
       margin-right: 0;
     }

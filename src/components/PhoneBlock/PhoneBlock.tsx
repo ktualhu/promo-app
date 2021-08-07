@@ -26,14 +26,15 @@ function PhoneBlock() {
 
   const handleFrameBtnClick = (num: string) => {
     setPhoneNumberValid({ valid: true, msg: '' });
-    if (num === 'X') {
-      setPhoneNumber(() => {
-        return phoneNumber.slice(0, -1);
+
+    if (num === '11') {
+      setPhoneNumber((prevPhoneNumber) => {
+        return prevPhoneNumber.slice(0, -1);
       });
     } else {
       if (phoneNumber.length < 10) {
-        setPhoneNumber(() => {
-          return phoneNumber.concat(num);
+        setPhoneNumber((prevPhoneNumber) => {
+          return prevPhoneNumber.concat(num);
         });
       }
     }
