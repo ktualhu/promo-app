@@ -42,14 +42,15 @@ function PhoneBlock() {
 
   const handleSubmitButtonClick = async () => {
     try {
-      const res = await axios.get('http://apilayer.net/api/validate', {
-        params: {
-          access_key: '0e2c8da5c19bf782f9300c92ea219004',
-          number: `${phoneNumber}`,
-          country_code: 'RU',
-          format: '1',
-        },
-      });
+      const res = await axios.get(
+        'https://phonevalidation.abstractapi.com/v1/',
+        {
+          params: {
+            api_key: 'cbde333249f44b58871e8f21fffdcaf8',
+            phone: `7${phoneNumber}`,
+          },
+        }
+      );
       if (!res.data.valid) throw new Error('НЕВЕРНО ВВЕДЁН НОМЕР');
       dispatch(changeSideBlockState(ESideBlockState.SUCCESS));
     } catch (e) {
