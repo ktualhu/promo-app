@@ -1,0 +1,49 @@
+.startBanner {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 251px;
+  height: 357px;
+  top: 20%;
+  right: 0;
+  padding-top: 20px;
+  background-color: #86d3f4;
+}
+
+.startBanner .startBanner__row {
+  margin-bottom: 20px;
+}
+
+.startBanner .startBanner__row:last-child {
+  margin-bottom: 10px;
+}
+
+.startBanner .startBanner__row:last-child .row__btn {
+  border: 2px solid #000;
+  padding: 16px;
+  width: 156px;
+  height: 52px;
+  background-color: #86d3f4;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.startBanner .startBanner__row:last-child .row__btn:hover {
+  cursor: pointer;
+  color: #86d3f4;
+  background-color: #000;
+}
+/*# sourceMappingURL=styles.css.map */

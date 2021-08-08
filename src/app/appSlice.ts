@@ -4,7 +4,7 @@ import AppState from './states/AppState';
 import { RootState } from './store';
 
 const initialState: AppState = {
-  sideBlockState: ESideBlockState.PHONE, // NONE - initial state
+  sideBlockState: ESideBlockState.NONE, // NONE - initial state
 };
 
 export const appSlice = createSlice({

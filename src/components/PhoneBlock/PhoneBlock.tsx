@@ -60,7 +60,11 @@ function PhoneBlock() {
   return (
     <div className="phoneBlock">
       <div className="phoneBlock_panels">
-        <Title />
+        <Title
+          text={'Введите ваш номер мобильного телефона'}
+          fontSize={26}
+          fontWeight={400}
+        />
       </div>
       <div className="phoneBlock_panels">
         <PhoneNumber value={phoneNumber} isValid={phoneNumberValid.valid} />

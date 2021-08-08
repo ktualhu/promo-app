@@ -1,10 +1,11 @@
+import Title from '../UI/Title/Title';
 import './styles/styles.css';
 
 function SuccessBlock() {
   return (
     <div className="successBlock">
       <div className="successBlock__panels">
-        <span className="panels__title">ЗАЯВКА ПРИНЯТА</span>
+        <Title text={'ЗАЯВКА ПРИНЯТА'} fontSize={32} fontWeight={700} />
       </div>
       <div className="successBlock__panels">
         <span>
