@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/promo-app/static/css/main.3cdb5fcf.chunk.css",
+    "main.css": "/promo-app/static/css/main.c518b219.chunk.css",
     "main.js": "/promo-app/static/js/main.c90a2611.chunk.js",
     "main.js.map": "/promo-app/static/js/main.c90a2611.chunk.js.map",
     "runtime-main.js": "/promo-app/static/js/runtime-main.77e43e68.js",
@@ -8,7 +8,7 @@
     "static/js/2.c3a9f8c1.chunk.js": "/promo-app/static/js/2.c3a9f8c1.chunk.js",
     "static/js/2.c3a9f8c1.chunk.js.map": "/promo-app/static/js/2.c3a9f8c1.chunk.js.map",
     "index.html": "/promo-app/index.html",
-    "static/css/main.3cdb5fcf.chunk.css.map": "/promo-app/static/css/main.3cdb5fcf.chunk.css.map",
+    "static/css/main.c518b219.chunk.css.map": "/promo-app/static/css/main.c518b219.chunk.css.map",
     "static/js/2.c3a9f8c1.chunk.js.LICENSE.txt": "/promo-app/static/js/2.c3a9f8c1.chunk.js.LICENSE.txt",
     "static/media/close.c31d8d04.svg": "/promo-app/static/media/close.c31d8d04.svg",
     "static/media/styles.css": "/promo-app/static/media/main.1d9dde58.png",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.77e43e68.js",
     "static/js/2.c3a9f8c1.chunk.js",
-    "static/css/main.3cdb5fcf.chunk.css",
+    "static/css/main.c518b219.chunk.css",
     "static/js/main.c90a2611.chunk.js"
   ]
 }
