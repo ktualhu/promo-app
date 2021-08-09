@@ -1,4 +1,5 @@
 import React from 'react';
+import QrBlock from '../QrBlock/QrBlock';
 import CloseButton from '../UI/CloseButton/CloseButton';
 import './styles/styles.css';
 
@@ -14,6 +15,7 @@ function SideBlock(props: IProps) {
       <div style={{ position: 'absolute', right: '20px', top: '20px' }}>
         <CloseButton />
       </div>
+      <QrBlock />
     </React.Fragment>
   );
 }

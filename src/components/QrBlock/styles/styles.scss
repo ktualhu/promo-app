@@ -1,0 +1,22 @@
+.qrBlock {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .qrBlock__text {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    text-align: end;
+    width: 194px;
+
+    span {
+      font-size: 18px;
+      font-weight: 500;
+      color: #fff;
+    }
+  }
+}
