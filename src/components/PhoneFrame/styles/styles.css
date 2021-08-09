@@ -1,0 +1,81 @@
+.frame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-bottom: 13px;
+  padding: 20px 0;
+}
+
+.frame .frameRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.frame .frameRow .frameRow__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 2px solid #000;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: #86d3f4;
+  padding: 12px 30px;
+  margin: 0 10px 0 0;
+  font-weight: 500;
+  font-size: 16px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.frame .frameRow .frameRow__btn:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.frame .frameRow .frameRow__btn__keyPress {
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  background-color: #000;
+  color: #fff;
+}
+
+.frame .frameRow .frameRow__btn:last-child {
+  margin-right: 0;
+}
+
+.long {
+  -webkit-box-flex: 3.7 !important;
+      -ms-flex-positive: 3.7 !important;
+          flex-grow: 3.7 !important;
+}
+/*# sourceMappingURL=styles.css.map */

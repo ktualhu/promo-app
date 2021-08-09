@@ -1,0 +1,38 @@
+.startBanner {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 251px;
+  height: 357px;
+  top: 20%;
+  right: 0;
+  padding-top: 20px;
+  background-color: #86d3f4;
+
+  .startBanner__row {
+    margin-bottom: 20px;
+  }
+
+  .startBanner__row:last-child {
+    margin-bottom: 10px;
+
+    .row__btn {
+      border: 2px solid #000;
+      padding: 16px;
+      width: 156px;
+      height: 52px;
+      background-color: #86d3f4;
+      transition: 0.4s;
+      font-size: 16px;
+      font-weight: 500;
+
+      &:hover {
+        cursor: pointer;
+        color: #86d3f4;
+        background-color: #000;
+      }
+    }
+  }
+}
