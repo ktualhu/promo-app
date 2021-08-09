@@ -11,7 +11,7 @@ export function keyboardArrowNav(dir: EDir, value: number) {
       if (value === -1) {
         return 1;
       } else if (value === 11) {
-        return 0 as number;
+        return 0;
       } else if (!value) {
         return 11;
       } else {
